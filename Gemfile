@@ -10,11 +10,13 @@ gem 'redis', '>= 4.0.1'
 
 gem 'bootsnap', require: false
 gem 'bootstrap-sass'
+gem 'cssbundling-rails'
 gem 'chartkick'
 gem 'decent_exposure'
 gem 'importmap-rails'
 gem 'jsbundling-rails'
 gem 'kredis'
+gem 'milligram'
 gem 'sassc-rails'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
