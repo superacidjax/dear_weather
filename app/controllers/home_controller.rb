@@ -4,31 +4,25 @@ class HomeController < ApplicationController
   end
 
   def get_weather
-    redis = Redis.new
-    location = params['query']
-    results = Geocoder.search(location)
-    if redis.get(results.first.postal_code)
-      @weather = JSON.parse(redis.get(results.first.postal_code))
-      cached = true
-    else
-      lat_long = results.first.coordinates
-      client = OpenWeather::Client.new(
-        api_key: '57c978d38dea28287b75e364fbaf5a29',
-        units: 'imperial'
-      )
-      weather = client.current_geo(lat_long[0], lat_long[1])
-    end
-
-    @weather ||= [
-      location, weather.main.temp, (weather.main.pressure/33.864).round(2),
-      weather.main.feels_like, [((weather.wind.speed) * 0.868976).round(2),
-                                weather.wind.deg ], weather.clouds.all,
-                                weather['weather'][0].icon_uri.to_s,
-                                weather['weather'][0].main]
-
-    redis.set(results.first.postal_code, @weather.to_json) unless cached
-
-
+    results = get_location(params['query'])
+    @weather = get_cached_weather_for(results.first.postal_code)
+    @weather ||= GetOpenweather.call(results.first.coordinates,
+                                   results.first.postal_code, params['query'])
     render :index
   end
+
+  private
+
+  def get_location(query)
+    Geocoder.search(query)
+  end
+
+  def get_cached_weather_for(postal_code)
+    weather = JSON.parse($redis.get(postal_code)) if $redis.get(postal_code)
+    if weather.present? && (DateTime.now.to_i - weather[8]) < 1800
+      @cached = true
+      weather
+    end
+  end
+
 end

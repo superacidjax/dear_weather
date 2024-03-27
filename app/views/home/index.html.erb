@@ -11,14 +11,20 @@
 
 <% if @weather %>
   <h3>Current Weather for <%= @weather[0] %></h3>
+  <% if @cached %>
+    <h4>Cached</h4>
+    <p>This report is about <%= weather_age(@weather) %> minutes old.</p>
+  <% end %>
 
   <%= image_tag(@weather[6]) %>
-  <p>Current Conditions <%= @weather[2] %></p>
-  <p>Temperature <%= @weather[3] %> F</p>
-  <p>Feels Like <%= @weather[4] %> F</p>
-  <p>Pressure <%= @weather[5] %> inHg</p>
-  <p>Wind <%= @weather[6][0] %> knots at <%= @weather[6][1] %> degrees</p>
-  <p>Clouds <%= @weather[7] %>%</p>
+  <p>Current Conditions <%= @weather[7] %></p>
+  <p>Temperature <%= @weather[1] %> F</p>
+  <p>Feels Like <%= @weather[3] %> F</p>
+  <p>Pressure <%= @weather[2] %> inHg</p>
+  <p>Wind <%= @weather[4][0] %> knots at <%= @weather[4][1] %> degrees</p>
+  <p>Clouds <%= @weather[5] %>%</p>
+  <p>Low Today <%= @weather[9] %> F</p>
+  <p>High Today <%= @weather[10] %> F</p>
 
 <% end %>
 

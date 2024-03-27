@@ -1,0 +1,111 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.geoapify.com/v1/geocode/search?apiKey=fee296456254470f94c0da85e78a5748&lang=en&text=Sabadell,%20Spain%2008205
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Mar 2024 15:35:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Api-Version:
+      - '1.0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, accept-language, content-language, access-control-max-age, access-control-allow-headers,
+        access-control-allow-methods, access-control-allow-origin, allow, api-version,
+        cf-ray, content-encoding, content-type, date, expect-ct, server, status, vary,
+        cache-control, etag, last-modified, expires, host, cf-region-code, cf-timezone,
+        accept-encoding, x-forwarded-for, x-forwarded-proto, cf-visitor, user-agent,
+        cf-connecting-ip, cdn-loop, cf-ipcity, cf-ipcontinent, cf-ipcountry, cf-iplatitude,
+        cf-iplongitude, cf-postal-code, cf-region, x-forwarded-port
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS, PUT
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Content-Disposition:
+      - inline; filename=response.geojson
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=L85yZkH3h9a1FKqk2%2FJljJdHRBaFjnW5uUyJWT6WyhFnznE26Tj7HpmtzN6sUEnfHyG%2BX9mH6D9N3re2Zsq5lerenROUXgJRJ%2Ff3n0JFKGIqscJnLSeGUJkqdeE3e2cL4Zk%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 86b072cede0e5e47-MAD
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0eXBlIjoiRmVhdHVyZUNvbGxlY3Rpb24iLCJmZWF0dXJlcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvdW50cnkiOiJTcGFpbiIsImNvdW50cnlfY29kZSI6ImVzIiwic3RhdGUiOiJDYXRhbG9uaWEiLCJjb3VudHkiOiJCYXJjZWxvbmEiLCJjaXR5IjoiU2FiYWRlbGwiLCJtdW5pY2lwYWxpdHkiOiJWYWxsw6hzIE9jY2lkZW50YWwiLCJwb3N0Y29kZSI6IjA4MjA1IiwiZGF0YXNvdXJjZSI6eyJzb3VyY2VuYW1lIjoib3BlbnN0cmVldG1hcCIsImF0dHJpYnV0aW9uIjoiwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMiLCJsaWNlbnNlIjoiT3BlbiBEYXRhYmFzZSBMaWNlbnNlIiwidXJsIjoiaHR0cHM6Ly93d3cub3BlbnN0cmVldG1hcC5vcmcvY29weXJpZ2h0In0sInJlc3VsdF90eXBlIjoicG9zdGNvZGUiLCJsb24iOjIuMDk2MDA1NjAzLCJsYXQiOjQxLjU0MDMxODM5MSwicGFyZW50X2FzX3BsYWNlX2lkIjp0cnVlLCJmb3JtYXR0ZWQiOiIwODIwNSBTYWJhZGVsbCwgU3BhaW4iLCJhZGRyZXNzX2xpbmUxIjoiMDgyMDUgU2FiYWRlbGwiLCJhZGRyZXNzX2xpbmUyIjoiU3BhaW4iLCJjb3VudHlfY29kZSI6IkIiLCJjYXRlZ29yeSI6ImFkbWluaXN0cmF0aXZlIiwidGltZXpvbmUiOnsibmFtZSI6IkV1cm9wZS9NYWRyaWQiLCJvZmZzZXRfU1REIjoiKzAxOjAwIiwib2Zmc2V0X1NURF9zZWNvbmRzIjozNjAwLCJvZmZzZXRfRFNUIjoiKzAyOjAwIiwib2Zmc2V0X0RTVF9zZWNvbmRzIjo3MjAwLCJhYmJyZXZpYXRpb25fU1REIjoiQ0VUIiwiYWJicmV2aWF0aW9uX0RTVCI6IkNFU1QifSwicGx1c19jb2RlIjoiOEZINEczUlcrNEMiLCJwbHVzX2NvZGVfc2hvcnQiOiJSVys0QyBTYWJhZGVsbCwgQmFyY2Vsb25hLCBTcGFpbiIsInJhbmsiOnsicG9wdWxhcml0eSI6Ni44Nzg5NDc3Njc5MDcwODY1LCJjb25maWRlbmNlIjoxLCJjb25maWRlbmNlX2NpdHlfbGV2ZWwiOjEsIm1hdGNoX3R5cGUiOiJmdWxsX21hdGNoIn0sInBsYWNlX2lkIjoiNTEyY2YxZTg5NTllYzQwMDQwNTlkYzYyMmQyNzI5YzU0NDQwZjAwMTAxZjkwMThhNDAwNTAwMDAwMDAwMDBjMDAyMDcifSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlsyLjA5NjAwNTYwMyw0MS41NDAzMTgzOTFdfSwiYmJveCI6WzIuMDQ2ODk0Niw0MS41MDY1NzE4LDIuMTUwMTYyOSw0MS41OTA1NTAyXX0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiZGF0YXNvdXJjZSI6eyJzb3VyY2VuYW1lIjoib3BlbnN0cmVldG1hcCIsImF0dHJpYnV0aW9uIjoiwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMiLCJsaWNlbnNlIjoiT3BlbiBEYXRhYmFzZSBMaWNlbnNlIiwidXJsIjoiaHR0cHM6Ly93d3cub3BlbnN0cmVldG1hcC5vcmcvY29weXJpZ2h0In0sImNvdW50cnkiOiJTcGFpbiIsImNvdW50cnlfY29kZSI6ImVzIiwic3RhdGUiOiJDYXRhbG9uaWEiLCJzdGF0ZV9kaXN0cmljdCI6IkJhcmNlbG9uYSIsImNvdW50eSI6IlZhbGzDqHMgT2NjaWRlbnRhbCIsImNpdHkiOiJTYWJhZGVsbCIsImxvbiI6Mi4xMTM4OTc3LCJsYXQiOjQxLjU0MjEwMTMsInJlc3VsdF90eXBlIjoiY2l0eSIsImZvcm1hdHRlZCI6IlNhYmFkZWxsLCBDYXRhbG9uaWEsIFNwYWluIiwiYWRkcmVzc19saW5lMSI6IlNhYmFkZWxsIiwiYWRkcmVzc19saW5lMiI6IkNhdGFsb25pYSwgU3BhaW4iLCJjb3VudHlfY29kZSI6IkIiLCJjYXRlZ29yeSI6ImFkbWluaXN0cmF0aXZlIiwidGltZXpvbmUiOnsibmFtZSI6IkV1cm9wZS9NYWRyaWQiLCJvZmZzZXRfU1REIjoiKzAxOjAwIiwib2Zmc2V0X1NURF9zZWNvbmRzIjozNjAwLCJvZmZzZXRfRFNUIjoiKzAyOjAwIiwib2Zmc2V0X0RTVF9zZWNvbmRzIjo3MjAwLCJhYmJyZXZpYXRpb25fU1REIjoiQ0VUIiwiYWJicmV2aWF0aW9uX0RTVCI6IkNFU1QifSwicGx1c19jb2RlIjoiOEZINEc0UjcrUkgiLCJwbHVzX2NvZGVfc2hvcnQiOiJSNytSSCBTYWJhZGVsbCwgVmFsbMOocyBPY2NpZGVudGFsLCBTcGFpbiIsInJhbmsiOnsiaW1wb3J0YW5jZSI6MC43NjMxNzYwNDI3NDI1NzYyLCJwb3B1bGFyaXR5Ijo3Ljc4MTE5NTM0NTkwNTU2MSwiY29uZmlkZW5jZSI6MSwiY29uZmlkZW5jZV9jaXR5X2xldmVsIjoxLCJtYXRjaF90eXBlIjoiZnVsbF9tYXRjaCJ9LCJwbGFjZV9pZCI6IjUxOGFiNzg0MzI0M2U5MDA0MDU5M2U0ZjRkOTM2M2M1NDQ0MGYwMDEwMWY5MDE4YTQwMDUwMDAwMDAwMDAwYzAwMjA4In0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbMi4xMTM4OTc3LDQxLjU0MjEwMTNdfSwiYmJveCI6WzIuMDQ2ODk0Niw0MS41MDY1NzE4LDIuMTUwMTYyOSw0MS41OTA1NTAyXX1dLCJxdWVyeSI6eyJ0ZXh0IjoiU2FiYWRlbGwsIFNwYWluIDA4MjA1IiwicGFyc2VkIjp7InBvc3Rjb2RlIjoiMDgyMDUiLCJjaXR5Ijoic2FiYWRlbGwiLCJjb3VudHJ5Ijoic3BhaW4iLCJleHBlY3RlZF90eXBlIjoicG9zdGNvZGUifX19
+  recorded_at: Wed, 27 Mar 2024 15:35:07 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=57c978d38dea28287b75e364fbaf5a29&lat=41.540318391&lon=2.096005603&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenWeather Ruby Client/0.4.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 27 Mar 2024 15:35:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '484'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?lat=41.54&lon=2.1&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":2.096,"lat":41.5403},"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04d"}],"base":"stations","main":{"temp":58.73,"feels_like":56.66,"temp_min":55.99,"temp_max":62.28,"pressure":997,"humidity":50},"visibility":10000,"wind":{"speed":13.8,"deg":220,"gust":25.32},"clouds":{"all":75},"dt":1711553707,"sys":{"type":2,"id":2006704,"country":"ES","sunrise":1711518151,"sunset":1711563062},"timezone":3600,"id":3111199,"name":"Sabadell","cod":200}'
+  recorded_at: Wed, 27 Mar 2024 15:35:07 GMT
+recorded_with: VCR 6.2.0

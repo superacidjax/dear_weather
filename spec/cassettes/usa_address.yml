@@ -1,0 +1,111 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.geoapify.com/v1/geocode/search?apiKey=fee296456254470f94c0da85e78a5748&lang=en&text=1%20Apple%20Park%20Way,%20Cupertino,%20CA,%2095014
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Mar 2024 15:35:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Api-Version:
+      - '1.0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, accept-language, content-language, access-control-max-age, access-control-allow-headers,
+        access-control-allow-methods, access-control-allow-origin, allow, api-version,
+        cf-ray, content-encoding, content-type, date, expect-ct, server, status, vary,
+        cache-control, etag, last-modified, expires, host, cf-region-code, cf-timezone,
+        accept-encoding, x-forwarded-for, x-forwarded-proto, cf-visitor, user-agent,
+        cf-connecting-ip, cdn-loop, cf-ipcity, cf-ipcontinent, cf-ipcountry, cf-iplatitude,
+        cf-iplongitude, cf-postal-code, cf-region, x-forwarded-port
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS, PUT
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Content-Disposition:
+      - inline; filename=response.geojson
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=nW68UAcU7BMUC0INVigOc%2FGbBsxshDHO9dTQNqgI7a90oi13vx1zmeqmCzZErdBNlEMhz7ZgCQEMmMbp7ZXtnHjszp9oLvb06TIQAWX14G3aU73me1wCakFFU89L0RPT9ws%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 86b072d32b30660b-MAD
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0eXBlIjoiRmVhdHVyZUNvbGxlY3Rpb24iLCJmZWF0dXJlcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImRhdGFzb3VyY2UiOnsic291cmNlbmFtZSI6Im9wZW5zdHJlZXRtYXAiLCJhdHRyaWJ1dGlvbiI6IsKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzIiwibGljZW5zZSI6Ik9wZW4gRGF0YWJhc2UgTGljZW5zZSIsInVybCI6Imh0dHBzOi8vd3d3Lm9wZW5zdHJlZXRtYXAub3JnL2NvcHlyaWdodCJ9LCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIiwic3RhdGUiOiJDYWxpZm9ybmlhIiwiY291bnR5IjoiU2FudGEgQ2xhcmEgQ291bnR5IiwiY2l0eSI6IkN1cGVydGlubyIsInBvc3Rjb2RlIjoiOTQwODciLCJzdHJlZXQiOiJBcHBsZSBQYXJrIFdheSIsImhvdXNlbnVtYmVyIjoiMSIsImxvbiI6LTEyMi4wMDcwODMsImxhdCI6MzcuMzI5ODk3Niwic3RhdGVfY29kZSI6IkNBIiwicmVzdWx0X3R5cGUiOiJidWlsZGluZyIsImZvcm1hdHRlZCI6IjEgQXBwbGUgUGFyayBXYXksIEN1cGVydGlubywgQ0EgOTQwODcsIFVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYSIsImFkZHJlc3NfbGluZTEiOiIxIEFwcGxlIFBhcmsgV2F5IiwiYWRkcmVzc19saW5lMiI6IkN1cGVydGlubywgQ0EgOTQwODcsIFVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYSIsInRpbWV6b25lIjp7Im5hbWUiOiJBbWVyaWNhL0xvc19BbmdlbGVzIiwib2Zmc2V0X1NURCI6Ii0wODowMCIsIm9mZnNldF9TVERfc2Vjb25kcyI6LTI4ODAwLCJvZmZzZXRfRFNUIjoiLTA3OjAwIiwib2Zmc2V0X0RTVF9zZWNvbmRzIjotMjUyMDAsImFiYnJldmlhdGlvbl9TVEQiOiJQU1QiLCJhYmJyZXZpYXRpb25fRFNUIjoiUERUIn0sInBsdXNfY29kZSI6Ijg0OVY4WEhWK1g1IiwicGx1c19jb2RlX3Nob3J0IjoiOFhIVitYNSBDdXBlcnRpbm8sIFNhbnRhIENsYXJhIENvdW50eSwgVW5pdGVkIFN0YXRlcyIsInJhbmsiOnsiaW1wb3J0YW5jZSI6MC41MTAwMSwicG9wdWxhcml0eSI6NC45ODIwNjQ3NjgxOTczNzMsImNvbmZpZGVuY2UiOjEsImNvbmZpZGVuY2VfY2l0eV9sZXZlbCI6MSwiY29uZmlkZW5jZV9zdHJlZXRfbGV2ZWwiOjEsIm1hdGNoX3R5cGUiOiJmdWxsX21hdGNoIn0sInBsYWNlX2lkIjoiNTFlMjU2NDEwYzc0ODA1ZWMwNTliMzgzYTUxNTNhYWE0MjQwZjAwMTAzZjkwMWQ4OTE0MDJkMDEwMDAwMDBjMDAyMDMifSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstMTIyLjAwNzA4MywzNy4zMjk4OTc2XX0sImJib3giOlstMTIyLjAwNzEzMywzNy4zMjk4NDc2LC0xMjIuMDA3MDMzLDM3LjMyOTk0NzZdfSx7InR5cGUiOiJGZWF0dXJlIiwicHJvcGVydGllcyI6eyJkYXRhc291cmNlIjp7InNvdXJjZW5hbWUiOiJvcGVuc3RyZWV0bWFwIiwiYXR0cmlidXRpb24iOiLCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycyIsImxpY2Vuc2UiOiJPcGVuIERhdGFiYXNlIExpY2Vuc2UiLCJ1cmwiOiJodHRwczovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9jb3B5cmlnaHQifSwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyIsInN0YXRlIjoiQ2FsaWZvcm5pYSIsImNvdW50eSI6IlNhbnRhIENsYXJhIENvdW50eSIsImNpdHkiOiJDdXBlcnRpbm8iLCJwb3N0Y29kZSI6Ijk0MDg3Iiwic3RyZWV0IjoiQXBwbGUgUGFyayBXYXkiLCJob3VzZW51bWJlciI6IjEiLCJsb24iOi0xMjIuMDEwMzM0MiwibGF0IjozNy4zMzI5NDU2LCJzdGF0ZV9jb2RlIjoiQ0EiLCJyZXN1bHRfdHlwZSI6ImJ1aWxkaW5nIiwiZm9ybWF0dGVkIjoiMSBBcHBsZSBQYXJrIFdheSwgQ3VwZXJ0aW5vLCBDQSA5NDA4NywgVW5pdGVkIFN0YXRlcyBvZiBBbWVyaWNhIiwiYWRkcmVzc19saW5lMSI6IjEgQXBwbGUgUGFyayBXYXkiLCJhZGRyZXNzX2xpbmUyIjoiQ3VwZXJ0aW5vLCBDQSA5NDA4NywgVW5pdGVkIFN0YXRlcyBvZiBBbWVyaWNhIiwiY2F0ZWdvcnkiOiJwYXJraW5nLmNhcnMiLCJ0aW1lem9uZSI6eyJuYW1lIjoiQW1lcmljYS9Mb3NfQW5nZWxlcyIsIm9mZnNldF9TVEQiOiItMDg6MDAiLCJvZmZzZXRfU1REX3NlY29uZHMiOi0yODgwMCwib2Zmc2V0X0RTVCI6Ii0wNzowMCIsIm9mZnNldF9EU1Rfc2Vjb25kcyI6LTI1MjAwLCJhYmJyZXZpYXRpb25fU1REIjoiUFNUIiwiYWJicmV2aWF0aW9uX0RTVCI6IlBEVCJ9LCJwbHVzX2NvZGUiOiI4NDlWOFhNUSs1ViIsInBsdXNfY29kZV9zaG9ydCI6IjhYTVErNVYgQ3VwZXJ0aW5vLCBTYW50YSBDbGFyYSBDb3VudHksIFVuaXRlZCBTdGF0ZXMiLCJyYW5rIjp7ImltcG9ydGFuY2UiOjAuNTEwMDEsInBvcHVsYXJpdHkiOjUuMDQ0MDg2ODk2NDg2Mzg3LCJjb25maWRlbmNlIjoxLCJjb25maWRlbmNlX2NpdHlfbGV2ZWwiOjEsImNvbmZpZGVuY2Vfc3RyZWV0X2xldmVsIjoxLCJtYXRjaF90eXBlIjoiZnVsbF9tYXRjaCJ9LCJwbGFjZV9pZCI6IjUxZjFjMWM2NTBhOTgwNWVjMDU5NmVhYzFmZjY5ZGFhNDI0MGYwMDEwM2Y5MDFkNDI1NGUyZDAxMDAwMDAwYzAwMjAzIn0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbLTEyMi4wMTAzMzQyLDM3LjMzMjk0NTZdfSwiYmJveCI6Wy0xMjIuMDEwMzg0MiwzNy4zMzI4OTU2LC0xMjIuMDEwMjg0MiwzNy4zMzI5OTU2XX0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiZGF0YXNvdXJjZSI6eyJzb3VyY2VuYW1lIjoib3BlbnN0cmVldG1hcCIsImF0dHJpYnV0aW9uIjoiwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMiLCJsaWNlbnNlIjoiT3BlbiBEYXRhYmFzZSBMaWNlbnNlIiwidXJsIjoiaHR0cHM6Ly93d3cub3BlbnN0cmVldG1hcC5vcmcvY29weXJpZ2h0In0sImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMiLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJjb3VudHkiOiJTYW50YSBDbGFyYSBDb3VudHkiLCJjaXR5IjoiQ3VwZXJ0aW5vIiwicG9zdGNvZGUiOiI5NDA4NyIsInN0cmVldCI6IkFwcGxlIFBhcmsgV2F5IiwiaG91c2VudW1iZXIiOiIxIiwibG9uIjotMTIyLjAwNjI2OTIsImxhdCI6MzcuMzM3Mjg5MSwic3RhdGVfY29kZSI6IkNBIiwicmVzdWx0X3R5cGUiOiJidWlsZGluZyIsImZvcm1hdHRlZCI6IjEgQXBwbGUgUGFyayBXYXksIEN1cGVydGlubywgQ0EgOTQwODcsIFVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYSIsImFkZHJlc3NfbGluZTEiOiIxIEFwcGxlIFBhcmsgV2F5IiwiYWRkcmVzc19saW5lMiI6IkN1cGVydGlubywgQ0EgOTQwODcsIFVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYSIsInRpbWV6b25lIjp7Im5hbWUiOiJBbWVyaWNhL0xvc19BbmdlbGVzIiwib2Zmc2V0X1NURCI6Ii0wODowMCIsIm9mZnNldF9TVERfc2Vjb25kcyI6LTI4ODAwLCJvZmZzZXRfRFNUIjoiLTA3OjAwIiwib2Zmc2V0X0RTVF9zZWNvbmRzIjotMjUyMDAsImFiYnJldmlhdGlvbl9TVEQiOiJQU1QiLCJhYmJyZXZpYXRpb25fRFNUIjoiUERUIn0sInBsdXNfY29kZSI6Ijg0OVY4WFBWK1dGIiwicGx1c19jb2RlX3Nob3J0IjoiOFhQVitXRiBDdXBlcnRpbm8sIFNhbnRhIENsYXJhIENvdW50eSwgVW5pdGVkIFN0YXRlcyIsInJhbmsiOnsiaW1wb3J0YW5jZSI6MC41MTAwMSwicG9wdWxhcml0eSI6NS4wMTExMTQ0MTk1MDc0MTYsImNvbmZpZGVuY2UiOjEsImNvbmZpZGVuY2VfY2l0eV9sZXZlbCI6MSwiY29uZmlkZW5jZV9zdHJlZXRfbGV2ZWwiOjEsIm1hdGNoX3R5cGUiOiJmdWxsX21hdGNoIn0sInBsYWNlX2lkIjoiNTEzNzNlZWViNjY2ODA1ZWMwNTkwZGU2MGE0YTJjYWI0MjQwZjAwMTAzZjkwMTQ2ODVhMGEzMDIwMDAwMDBjMDAyMDMifSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstMTIyLjAwNjI2OTIsMzcuMzM3Mjg5MV19LCJiYm94IjpbLTEyMi4wMDYzMTkyLDM3LjMzNzIzOTEsLTEyMi4wMDYyMTkyLDM3LjMzNzMzOTFdfSx7InR5cGUiOiJGZWF0dXJlIiwicHJvcGVydGllcyI6eyJkYXRhc291cmNlIjp7InNvdXJjZW5hbWUiOiJvcGVuc3RyZWV0bWFwIiwiYXR0cmlidXRpb24iOiLCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycyIsImxpY2Vuc2UiOiJPcGVuIERhdGFiYXNlIExpY2Vuc2UiLCJ1cmwiOiJodHRwczovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9jb3B5cmlnaHQifSwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyIsInN0YXRlIjoiQ2FsaWZvcm5pYSIsImNvdW50eSI6IlNhbnRhIENsYXJhIENvdW50eSIsImNpdHkiOiJDdXBlcnRpbm8iLCJwb3N0Y29kZSI6Ijk0MDg3Iiwic3RyZWV0IjoiQXBwbGUgUGFyayBXYXkiLCJob3VzZW51bWJlciI6IjEiLCJsb24iOi0xMjIuMDA5NDQ4LCJsYXQiOjM3LjMyOTQ1MjQsInN0YXRlX2NvZGUiOiJDQSIsInJlc3VsdF90eXBlIjoiYnVpbGRpbmciLCJmb3JtYXR0ZWQiOiIxIEFwcGxlIFBhcmsgV2F5LCBDdXBlcnRpbm8sIENBIDk0MDg3LCBVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EiLCJhZGRyZXNzX2xpbmUxIjoiMSBBcHBsZSBQYXJrIFdheSIsImFkZHJlc3NfbGluZTIiOiJDdXBlcnRpbm8sIENBIDk0MDg3LCBVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EiLCJ0aW1lem9uZSI6eyJuYW1lIjoiQW1lcmljYS9Mb3NfQW5nZWxlcyIsIm9mZnNldF9TVEQiOiItMDg6MDAiLCJvZmZzZXRfU1REX3NlY29uZHMiOi0yODgwMCwib2Zmc2V0X0RTVCI6Ii0wNzowMCIsIm9mZnNldF9EU1Rfc2Vjb25kcyI6LTI1MjAwLCJhYmJyZXZpYXRpb25fU1REIjoiUFNUIiwiYWJicmV2aWF0aW9uX0RTVCI6IlBEVCJ9LCJwbHVzX2NvZGUiOiI4NDlWOFhIUitRNiIsInBsdXNfY29kZV9zaG9ydCI6IjhYSFIrUTYgQ3VwZXJ0aW5vLCBTYW50YSBDbGFyYSBDb3VudHksIFVuaXRlZCBTdGF0ZXMiLCJyYW5rIjp7ImltcG9ydGFuY2UiOjAuNTEwMDEsInBvcHVsYXJpdHkiOjUuMDA5Nzk4MTQ5NTIwMjY3LCJjb25maWRlbmNlIjoxLCJjb25maWRlbmNlX2NpdHlfbGV2ZWwiOjEsImNvbmZpZGVuY2Vfc3RyZWV0X2xldmVsIjoxLCJtYXRjaF90eXBlIjoiZnVsbF9tYXRjaCJ9LCJwbGFjZV9pZCI6IjUxY2ZjMGM4Y2I5YTgwNWVjMDU5NWJjYjA5N2YyYmFhNDI0MGYwMDEwM2Y5MDFmN2Q1YzEyZDAxMDAwMDAwYzAwMjAzIn0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbLTEyMi4wMDk0NDgsMzcuMzI5NDUyNF19LCJiYm94IjpbLTEyMi4wMDk0OTgsMzcuMzI5NDAyNCwtMTIyLjAwOTM5OCwzNy4zMjk1MDI0XX0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiZGF0YXNvdXJjZSI6eyJzb3VyY2VuYW1lIjoib3BlbnN0cmVldG1hcCIsImF0dHJpYnV0aW9uIjoiwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMiLCJsaWNlbnNlIjoiT3BlbiBEYXRhYmFzZSBMaWNlbnNlIiwidXJsIjoiaHR0cHM6Ly93d3cub3BlbnN0cmVldG1hcC5vcmcvY29weXJpZ2h0In0sImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMiLCJzdGF0ZSI6IkNhbGlmb3JuaWEiLCJjb3VudHkiOiJTYW50YSBDbGFyYSBDb3VudHkiLCJjaXR5IjoiQ3VwZXJ0aW5vIiwicG9zdGNvZGUiOiI5NDA4NyIsInN0cmVldCI6IkFwcGxlIFBhcmsgV2F5IiwiaG91c2VudW1iZXIiOiIxIiwibG9uIjotMTIyLjAwNTYyMzgsImxhdCI6MzcuMzMzMDA2Miwic3RhdGVfY29kZSI6IkNBIiwicmVzdWx0X3R5cGUiOiJidWlsZGluZyIsImZvcm1hdHRlZCI6IjEgQXBwbGUgUGFyayBXYXksIEN1cGVydGlubywgQ0EgOTQwODcsIFVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYSIsImFkZHJlc3NfbGluZTEiOiIxIEFwcGxlIFBhcmsgV2F5IiwiYWRkcmVzc19saW5lMiI6IkN1cGVydGlubywgQ0EgOTQwODcsIFVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYSIsInRpbWV6b25lIjp7Im5hbWUiOiJBbWVyaWNhL0xvc19BbmdlbGVzIiwib2Zmc2V0X1NURCI6Ii0wODowMCIsIm9mZnNldF9TVERfc2Vjb25kcyI6LTI4ODAwLCJvZmZzZXRfRFNUIjoiLTA3OjAwIiwib2Zmc2V0X0RTVF9zZWNvbmRzIjotMjUyMDAsImFiYnJldmlhdGlvbl9TVEQiOiJQU1QiLCJhYmJyZXZpYXRpb25fRFNUIjoiUERUIn0sInBsdXNfY29kZSI6Ijg0OVY4WE1WKzZRIiwicGx1c19jb2RlX3Nob3J0IjoiOFhNVis2USBDdXBlcnRpbm8sIFNhbnRhIENsYXJhIENvdW50eSwgVW5pdGVkIFN0YXRlcyIsInJhbmsiOnsiaW1wb3J0YW5jZSI6MC41MTAwMSwicG9wdWxhcml0eSI6NC45NTg5OTEwNDUwODEyMjQsImNvbmZpZGVuY2UiOjEsImNvbmZpZGVuY2VfY2l0eV9sZXZlbCI6MSwiY29uZmlkZW5jZV9zdHJlZXRfbGV2ZWwiOjEsIm1hdGNoX3R5cGUiOiJmdWxsX21hdGNoIn0sInBsYWNlX2lkIjoiNTExMjQ1ZWQyMzVjODA1ZWMwNTljMDJlNzlmMjlmYWE0MjQwZjAwMTAzZjkwMTBlODEwODRmMDEwMDAwMDBjMDAyMDMifSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstMTIyLjAwNTYyMzgsMzcuMzMzMDA2Ml19LCJiYm94IjpbLTEyMi4wMDU2NzM4LDM3LjMzMjk1NjIsLTEyMi4wMDU1NzM4LDM3LjMzMzA1NjJdfV0sInF1ZXJ5Ijp7InRleHQiOiIxIEFwcGxlIFBhcmsgV2F5LCBDdXBlcnRpbm8sIENBLCA5NTAxNCIsInBhcnNlZCI6eyJob3VzZW51bWJlciI6IjEiLCJzdHJlZXQiOiJhcHBsZSBwYXJrIHdheSIsInBvc3Rjb2RlIjoiOTUwMTQiLCJjaXR5IjoiY3VwZXJ0aW5vIiwic3RhdGUiOiJjYSIsImV4cGVjdGVkX3R5cGUiOiJidWlsZGluZyJ9fX0=
+  recorded_at: Wed, 27 Mar 2024 15:35:09 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=57c978d38dea28287b75e364fbaf5a29&lat=37.3298976&lon=-122.007083&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenWeather Ruby Client/0.4.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 27 Mar 2024 15:35:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '491'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?lat=37.33&lon=-122.01&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-122.0071,"lat":37.3299},"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03d"}],"base":"stations","main":{"temp":49.15,"feels_like":49.15,"temp_min":45.23,"temp_max":52.57,"pressure":1020,"humidity":86},"visibility":10000,"wind":{"speed":1.99,"deg":101,"gust":3},"clouds":{"all":40},"dt":1711553709,"sys":{"type":2,"id":2010043,"country":"US","sunrise":1711548002,"sunset":1711592767},"timezone":-25200,"id":5341145,"name":"Cupertino","cod":200}'
+  recorded_at: Wed, 27 Mar 2024 15:35:09 GMT
+recorded_with: VCR 6.2.0
