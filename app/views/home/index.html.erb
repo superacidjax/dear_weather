@@ -12,8 +12,7 @@
 <% if @weather %>
   <h3>Current Weather for <%= @weather[0] %></h3>
   <% if @cached %>
-    <h4>Cached</h4>
-    <p>This report is about <%= weather_age(@weather) %> minutes old.</p>
+    <p>This cached report is about <%= weather_age(@weather) %> minutes old.</p>
   <% end %>
 
   <%= image_tag(@weather[6]) %>

@@ -4,10 +4,10 @@ class HomeController < ApplicationController
   end
 
   def get_weather
-    results = get_location(params['query'])
-    @weather = get_cached_weather_for(results.first.postal_code)
-    @weather ||= GetOpenweather.call(results.first.coordinates,
-                                   results.first.postal_code, params['query'])
+    location = get_location(params['query'])
+    @weather = get_cached_weather_for(location.first.postal_code)
+    @weather ||= GetOpenweather.call(location.first.coordinates,
+                                   location.first.postal_code, params['query'])
     render :index
   end
 

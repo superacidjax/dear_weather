@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 27 Mar 2024 15:35:06 GMT
+      - Wed, 27 Mar 2024 16:31:32 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -51,20 +51,20 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=U1EELBCaPIOZATkoltAP2fSgFYdh0Yt5LCf4Lh10%2Fbiuf7SAt5ub6nSGkJiZ8ud2GRu8HI6Q3jrYyvQAwqikO5mMtNFyfGPK4hHBWgQTnltJYpitA16dBLW7hz3g0xPPb2c%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=WFVAwarb885TBB6a%2FcUJ1pxxTQve1ssbAndQUWU2fMzCvYTPNSAjeNLrO%2FDTZgSccpuv6ha7Kiwrc5MsUAgy0R5drRUSMRToAD%2F5XnaqHiTOTlDpRTZzPArkc3XOKP02%2B9U%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 86b072cb2ddb2172-MAD
+      - 86b0c573cdd869eb-MAD
       Alt-Svc:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJ0eXBlIjoiRmVhdHVyZUNvbGxlY3Rpb24iLCJmZWF0dXJlcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImRhdGFzb3VyY2UiOnsic291cmNlbmFtZSI6Im9wZW5zdHJlZXRtYXAiLCJhdHRyaWJ1dGlvbiI6IsKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzIiwibGljZW5zZSI6Ik9wZW4gRGF0YWJhc2UgTGljZW5zZSIsInVybCI6Imh0dHBzOi8vd3d3Lm9wZW5zdHJlZXRtYXAub3JnL2NvcHlyaWdodCJ9LCJuYW1lIjoiSG91c3RvbiIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMiLCJzdGF0ZSI6IlRleGFzIiwiY291bnR5IjoiSGFycmlzIENvdW50eSIsImNpdHkiOiJIb3VzdG9uIiwicG9zdGNvZGUiOiI3NzA4OCIsImxvbiI6LTk1LjQ1MTUxNDgwNDM1Mjk0LCJsYXQiOjI5Ljg3ODQ5MjI2Nzc2NDcwNiwic3RhdGVfY29kZSI6IlRYIiwicmVzdWx0X3R5cGUiOiJwb3N0Y29kZSIsImZvcm1hdHRlZCI6IkhvdXN0b24sIFRYIDc3MDg4LCBVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EiLCJhZGRyZXNzX2xpbmUxIjoiSG91c3RvbiIsImFkZHJlc3NfbGluZTIiOiJIb3VzdG9uLCBUWCA3NzA4OCwgVW5pdGVkIFN0YXRlcyBvZiBBbWVyaWNhIiwidGltZXpvbmUiOnsibmFtZSI6IkFtZXJpY2EvQ2hpY2FnbyIsIm9mZnNldF9TVEQiOiItMDY6MDAiLCJvZmZzZXRfU1REX3NlY29uZHMiOi0yMTYwMCwib2Zmc2V0X0RTVCI6Ii0wNTowMCIsIm9mZnNldF9EU1Rfc2Vjb25kcyI6LTE4MDAwLCJhYmJyZXZpYXRpb25fU1REIjoiQ1NUIiwiYWJicmV2aWF0aW9uX0RTVCI6IkNEVCJ9LCJwbHVzX2NvZGUiOiI3Nlg2VkdIWCs5OSIsInBsdXNfY29kZV9zaG9ydCI6IlZHSFgrOTksIDc3MDg4IEhvdXN0b24sIFVuaXRlZCBTdGF0ZXMiLCJyYW5rIjp7ImltcG9ydGFuY2UiOjAuMzM0OTk5OTk5OTk5OTk5OTYsInBvcHVsYXJpdHkiOjQuMTE2ODc4MDM2MTY0NTksImNvbmZpZGVuY2UiOjEsImNvbmZpZGVuY2VfY2l0eV9sZXZlbCI6MSwibWF0Y2hfdHlwZSI6ImZ1bGxfbWF0Y2gifSwicGxhY2VfaWQiOiI1MWM0OTY1OTllZTVkYzU3YzA1OTlhZDY4N2RlZTRlMDNkNDBjMDAyMDc5MjAzMDc0ODZmNzU3Mzc0NmY2ZSJ9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6Wy05NS40NTE1MTQ4MDQzNTI5NCwyOS44Nzg0OTIyNjc3NjQ3MDZdfSwiYmJveCI6Wy05NS42MTE1MTQ4MDQzNTMsMjkuNzE4NDkyMjY3NzY1LC05NS4yOTE1MTQ4MDQzNTMsMzAuMDM4NDkyMjY3NzY1XX0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiZGF0YXNvdXJjZSI6eyJzb3VyY2VuYW1lIjoib3BlbnN0cmVldG1hcCIsImF0dHJpYnV0aW9uIjoiwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMiLCJsaWNlbnNlIjoiT3BlbiBEYXRhYmFzZSBMaWNlbnNlIiwidXJsIjoiaHR0cHM6Ly93d3cub3BlbnN0cmVldG1hcC5vcmcvY29weXJpZ2h0In0sIm5hbWUiOiI3NzA4OCIsInJlZiI6Ijc3MDg4IiwiY291bnRyeSI6IlNwYWluIiwiY291bnRyeV9jb2RlIjoiZXMiLCJzdGF0ZSI6Ik5hdmFycmUiLCJzdGF0ZV9kaXN0cmljdCI6Ik5hdmFycmUiLCJjb3VudHkiOiJFcnJpYmVyYSAvIFJpYmVyYSIsImNpdHkiOiJGdXN0acOxYW5hIiwicG9zdGNvZGUiOiIzMTUxMCIsInN0cmVldCI6IkNhbGxlIFNhbiBBbnTDs24iLCJsb24iOi0xLjQ4MDgxNTMsImxhdCI6NDIuMDE3NjY0NiwicmVzdWx0X3R5cGUiOiJhbWVuaXR5IiwiZm9ybWF0dGVkIjoiNzcwODgsIENhbGxlIFNhbiBBbnTDs24sIDMxNTEwIEZ1c3Rpw7FhbmEsIFNwYWluIiwiYWRkcmVzc19saW5lMSI6Ijc3MDg4IiwiYWRkcmVzc19saW5lMiI6IkNhbGxlIFNhbiBBbnTDs24sIDMxNTEwIEZ1c3Rpw7FhbmEsIFNwYWluIiwidGltZXpvbmUiOnsibmFtZSI6IkV1cm9wZS9NYWRyaWQiLCJvZmZzZXRfU1REIjoiKzAxOjAwIiwib2Zmc2V0X1NURF9zZWNvbmRzIjozNjAwLCJvZmZzZXRfRFNUIjoiKzAyOjAwIiwib2Zmc2V0X0RTVF9zZWNvbmRzIjo3MjAwLCJhYmJyZXZpYXRpb25fU1REIjoiQ0VUIiwiYWJicmV2aWF0aW9uX0RTVCI6IkNFU1QifSwicGx1c19jb2RlIjoiOENKVzJHOTkrM00iLCJwbHVzX2NvZGVfc2hvcnQiOiI5OSszTSBGdXN0acOxYW5hLCBFcnJpYmVyYSAvIFJpYmVyYSwgU3BhaW4iLCJyYW5rIjp7ImltcG9ydGFuY2UiOjAuMTEwMDA5OTk5OTk5OTk5OTcsInBvcHVsYXJpdHkiOjIuODEwOTM2MzkyNzE0MDk4NSwiY29uZmlkZW5jZSI6MSwibWF0Y2hfdHlwZSI6ImZ1bGxfbWF0Y2gifSwicGxhY2VfaWQiOiI1MWIxYTk0ZTYyNmJiMWY3YmY1OTAyYTY2N2Q1NDIwMjQ1NDBmMDAxMDNmOTAxYmMwZDkxOWEwMjAwMDAwMGMwMDIwMTkyMDMwNTM3MzczMDM4MzgifSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstMS40ODA4MTUzLDQyLjAxNzY2NDZdfSwiYmJveCI6Wy0xLjQ4MDg2NTMsNDIuMDE3NjE0NiwtMS40ODA3NjUzLDQyLjAxNzcxNDZdfSx7InR5cGUiOiJGZWF0dXJlIiwicHJvcGVydGllcyI6eyJkYXRhc291cmNlIjp7InNvdXJjZW5hbWUiOiJvcGVuc3RyZWV0bWFwIiwiYXR0cmlidXRpb24iOiLCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycyIsImxpY2Vuc2UiOiJPcGVuIERhdGFiYXNlIExpY2Vuc2UiLCJ1cmwiOiJodHRwczovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9jb3B5cmlnaHQifSwibmFtZSI6IkwuZ28gU3BlcmxvbmdhIiwicmVmIjoiNzcwODgiLCJjb3VudHJ5IjoiSXRhbHkiLCJjb3VudHJ5X2NvZGUiOiJpdCIsInN0YXRlIjoiTGF6aW8iLCJjb3VudHkiOiJSb21hIENhcGl0YWxlIiwiY2l0eSI6IlJvbWUiLCJwb3N0Y29kZSI6IjAwMTg5Iiwic3VidXJiIjoiTXVuaWNpcGlvIFJvbWEgWFYiLCJzdHJlZXQiOiJMYXJnbyBTcGVybG9uZ2EiLCJsb24iOjEyLjQ1MDU3NzEsImxhdCI6NDEuOTY4OTA2OCwic3RhdGVfY29kZSI6IkxBWiIsInJlc3VsdF90eXBlIjoiYW1lbml0eSIsImZvcm1hdHRlZCI6IkwuZ28gU3BlcmxvbmdhLCBMYXJnbyBTcGVybG9uZ2EsIDAwMTg5IFJvbWUgUk0sIEl0YWx5IiwiYWRkcmVzc19saW5lMSI6IkwuZ28gU3BlcmxvbmdhIiwiYWRkcmVzc19saW5lMiI6IkxhcmdvIFNwZXJsb25nYSwgMDAxODkgUm9tZSBSTSwgSXRhbHkiLCJjYXRlZ29yeSI6InB1YmxpY190cmFuc3BvcnQuYnVzIiwidGltZXpvbmUiOnsibmFtZSI6IkV1cm9wZS9Sb21lIiwib2Zmc2V0X1NURCI6IiswMTowMCIsIm9mZnNldF9TVERfc2Vjb25kcyI6MzYwMCwib2Zmc2V0X0RTVCI6IiswMjowMCIsIm9mZnNldF9EU1Rfc2Vjb25kcyI6NzIwMCwiYWJicmV2aWF0aW9uX1NURCI6IkNFVCIsImFiYnJldmlhdGlvbl9EU1QiOiJDRVNUIn0sInBsdXNfY29kZSI6IjhGSEpYRjkyK0g2IiwicGx1c19jb2RlX3Nob3J0IjoiWEY5MitINiBSb21lLCBSb21hIENhcGl0YWxlLCBJdGFseSIsInJhbmsiOnsiaW1wb3J0YW5jZSI6MC4wMDAwMDk5OTk5OTk5OTk5NTQ0OSwicG9wdWxhcml0eSI6Ni4yMzgwMjUwNDk1NzA4NzksImNvbmZpZGVuY2UiOjEsIm1hdGNoX3R5cGUiOiJmdWxsX21hdGNoIn0sInBsYWNlX2lkIjoiNTEyZWE3YTkwYWIyZTYyODQwNTk5ZTZmNTUyMzA1ZmM0NDQwZjAwMTAzZjkwMTc0YjM1NjYzMDAwMDAwMDBjMDAyMDE5MjAzMGU0YzJlNjc2ZjIwNTM3MDY1NzI2YzZmNmU2NzYxIn0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbMTIuNDUwNTc3MSw0MS45Njg5MDY4XX0sImJib3giOlsxMi40NTA1MjcxLDQxLjk2ODg1NjgsMTIuNDUwNjI3MSw0MS45Njg5NTY4XX1dLCJxdWVyeSI6eyJ0ZXh0IjoiNzcwODgiLCJwYXJzZWQiOnsicG9zdGNvZGUiOiI3NzA4OCIsImV4cGVjdGVkX3R5cGUiOiJ1bmtub3duIn19fQ==
-  recorded_at: Wed, 27 Mar 2024 15:35:06 GMT
+  recorded_at: Wed, 27 Mar 2024 16:31:32 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/weather?appid=57c978d38dea28287b75e364fbaf5a29&lat=29.878492267764706&lon=-95.45151480435294&units=imperial
@@ -88,11 +88,11 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Wed, 27 Mar 2024 15:35:07 GMT
+      - Wed, 27 Mar 2024 16:31:33 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '478'
+      - '476'
       Connection:
       - keep-alive
       X-Cache-Key:
@@ -106,6 +106,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"coord":{"lon":-95.4515,"lat":29.8785},"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"base":"stations","main":{"temp":57.06,"feels_like":55.42,"temp_min":55.06,"temp_max":59.92,"pressure":1018,"humidity":63},"visibility":10000,"wind":{"speed":10.36,"deg":40},"clouds":{"all":100},"dt":1711553707,"sys":{"type":2,"id":2006690,"country":"US","sunrise":1711541786,"sunset":1711586239},"timezone":-18000,"id":4699303,"name":"Hudson","cod":200}'
-  recorded_at: Wed, 27 Mar 2024 15:35:07 GMT
+        clouds","icon":"04d"}],"base":"stations","main":{"temp":61.11,"feels_like":59.65,"temp_min":57.4,"temp_max":63.91,"pressure":1019,"humidity":58},"visibility":10000,"wind":{"speed":11.5,"deg":10},"clouds":{"all":100},"dt":1711557093,"sys":{"type":2,"id":2006690,"country":"US","sunrise":1711541786,"sunset":1711586239},"timezone":-18000,"id":4699303,"name":"Hudson","cod":200}'
+  recorded_at: Wed, 27 Mar 2024 16:31:33 GMT
 recorded_with: VCR 6.2.0

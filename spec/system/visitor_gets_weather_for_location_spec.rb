@@ -29,14 +29,14 @@ RSpec.describe 'Visitor gets weather for location', type: :system do
       fill_in 'query', with: '77088'
       click_button 'Get Weather'
     end
-    expect(page).to_not have_content('Cached')
+    expect(page).to_not have_content('This cached report')
 
     # this should load from cache 
     VCR.use_cassette('77088') do
       fill_in 'query', with: '77088'
       click_button 'Get Weather'
     end
-    expect(page).to have_content('Cached')
+    expect(page).to have_content('This cached report')
 
     # traveling ahead to 31 minutes so it get fresh weather
     travel_to Time.now + 31.minutes
@@ -44,6 +44,6 @@ RSpec.describe 'Visitor gets weather for location', type: :system do
       fill_in 'query', with: '77088'
       click_button 'Get Weather'
     end
-    expect(page).to_not have_content('Cached')
+    expect(page).to_not have_content('This cached report')
   end
 end
