@@ -25,7 +25,6 @@ gem 'stimulus-rails'
 gem 'turbo-rails'
 
 group :development, :test do
-  gem 'dotenv'
   gem 'fabrication'
   gem 'faker'
   gem 'pry-rails'
