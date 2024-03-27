@@ -2,3 +2,23 @@
   <h1>Dear Weather</h1>
   <h2>Get Weather Anywhere</h2>
 </div>
+
+<%= form_with url: get_weather_url, method: :get do |form| %>
+  <%= form.label :query, "Enter a location:" %>
+  <%= form.text_field :query %>
+  <%= form.submit "Get Weather" %>
+<% end %>
+
+<% if @weather %>
+  <h3>Current Weather for <%= @weather[0] %></h3>
+
+  <%= image_tag(@weather[6]) %>
+  <p>Current Conditions <%= @weather[2] %></p>
+  <p>Temperature <%= @weather[3] %> F</p>
+  <p>Feels Like <%= @weather[4] %> F</p>
+  <p>Pressure <%= @weather[5] %> inHg</p>
+  <p>Wind <%= @weather[6][0] %> knots at <%= @weather[6][1] %> degrees</p>
+  <p>Clouds <%= @weather[7] %>%</p>
+
+<% end %>
+
